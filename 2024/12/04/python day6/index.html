@@ -9,11 +9,15 @@
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="#del语句 作用：删除对象 1del 对象,对象,...   #输入 intput(&#39;提示信息&#39;)  得到数据为字符串类型  #输出  1print(&#x27;我的名字是%s,年龄是%d&#x27;%(name,age))	#若出现多个变量时，需用括号  1print(&#x27;及格人数占比%d%%&#x27;%50)	#若要输出百分数，则需两个%%  1print(f&quot;我的名字&amp;">
+<meta property="og:type" content="article">
 <meta property="og:title" content="dog&#39;home">
-<meta property="og:url" content="https://lllxxl-cmd.github.io/index.html">
+<meta property="og:url" content="https://lllxxl-cmd.github.io/2024/12/04/python%20day6/index.html">
 <meta property="og:site_name" content="dog&#39;home">
+<meta property="og:description" content="#del语句 作用：删除对象 1del 对象,对象,...   #输入 intput(&#39;提示信息&#39;)  得到数据为字符串类型  #输出  1print(&#x27;我的名字是%s,年龄是%d&#x27;%(name,age))	#若出现多个变量时，需用括号  1print(&#x27;及格人数占比%d%%&#x27;%50)	#若要输出百分数，则需两个%%  1print(f&quot;我的名字&amp;">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-12-04T07:35:36.775Z">
+<meta property="article:modified_time" content="2024-12-04T07:35:36.985Z">
 <meta property="article:author" content="dog">
 <meta name="twitter:card" content="summary">
   
@@ -146,9 +150,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-python day6" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-python day6" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2024/12/04/python%20day6/" class="article-date">
@@ -196,17 +198,19 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/12/04/python%20day4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -215,288 +219,6 @@
 
 
 
-
-  
-    <article id="post-python day4" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2024/12/04/python%20day4/" class="article-date">
-  	<time datetime="2024-12-03T16:57:47.305Z" itemprop="datePublished">2024-12-04</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>循环语句<br>1.while</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">while()</span><br><span class="line">    执行语句</span><br><span class="line">    执行语句</span><br></pre></td></tr></table></figure>
-<p>2.while…else…</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">while()</span><br><span class="line">    执行语句</span><br><span class="line">    执行语句</span><br><span class="line">    ...</span><br><span class="line">else</span><br><span class="line">    执行语句</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
-<p>3.for(可用于遍历)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for a in &#x27;python&#x27;:</span><br><span class="line">    print(&quot;当前字母：%s\n&quot; %a)</span><br><span class="line">fruits=[&#x27;banana&#x27;,&#x27;apple&#x27;,&#x27;orange&#x27;]</span><br><span class="line">for fruit in fruits:</span><br><span class="line">    print(&quot;当前水果为%s\n&quot; %fruit)</span><br></pre></td></tr></table></figure>
-<p>4.for…else…</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">for num in range(10,20): # 迭代 10 到 20 之间的数字 </span><br><span class="line">    for i in range(2,num): # 根据因子迭代 </span><br><span class="line">        if num%i == 0: # 确定第一个因子 </span><br><span class="line">        	j=num/i # 计算第二个因子 </span><br><span class="line">        	print(&#x27;%d 等于 %d * %d&#x27; % (num,i,j)) </span><br><span class="line">        	break # 跳出当前循环</span><br><span class="line">    else: # 循环的 else 部分 </span><br><span class="line">        print(&#x27;%d 是一个质数&#x27; % num)</span><br></pre></td></tr></table></figure>
-
-<p>break语句<br>打破最小封闭for或while循环，即终止循环语句<br>continue语句<br>跳过本次循环<br>pass语句<br>空语句，一般用作占位语句</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-python day3" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2024/12/04/python%20day3/" class="article-date">
-  	<time datetime="2024-12-03T16:20:09.816Z" itemprop="datePublished">2024-12-04</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>导入包<br>将整个模块导入 格式： import 模块<br>从某个模块中导入某个函数 格式： from 模块 import 函数<br>将某个模块全部函数导入 格式：from 模块 import *<br>将某个模块改名 格式： import a as b</p>
-<p>if语句（0或null为false）<br>if 条件：执行<br>elif 条件：执行<br>…<br>else：执行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a=0</span><br><span class="line">b=1</span><br><span class="line">if a&gt;b:</span><br><span class="line">    print()</span><br></pre></td></tr></table></figure>
-
-
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-python day2" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2024/12/03/python%20day2/" class="article-date">
-  	<time datetime="2024-12-02T16:12:57.100Z" itemprop="datePublished">2024-12-03</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>行与缩进<br>python需要用缩进表示代码块</p>
-<p>关键字<br>False class finally is return None continue for lambda try True def from nonlocal while and del global not with as elif if or yield assert else import pass break except in raise</p>
-<p>数据类型<br>int 整型：用于表示整数<br>eg：count&#x3D;int(100);<br>float 浮点型： 用于表示小数<br>eg：count&#x3D;float(100);<br>str 字符型：任意<br>eg：name&#x3D;str(100<br>布尔类型 true&amp;false</p>
-<p>比较运算<br>等于&#x3D;&#x3D;<br>不等于！&#x3D;<br>大于等于&gt;&#x3D;<br>小于等于&lt;&#x3D;<br>大于&gt;<br>小于&lt;</p>
-<p>逻辑运算<br>与运算 and 一假则假<br>或运算 or 一真则真<br>非运算 not 真假倒转</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-python day1" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2024/12/02/python%20day1/" class="article-date">
-  	<time datetime="2024-12-02T15:54:47.433Z" itemprop="datePublished">2024-12-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="注释eg-内容（单行注释）eg-’’’-“””-内容-或-内容-‘’’-“””-多行注释"><a href="#注释eg-内容（单行注释）eg-’’’-“””-内容-或-内容-‘’’-“””-多行注释" class="headerlink" title="注释eg.#内容（单行注释）eg.’’’        “””   内容  或   内容   ‘’’        “””(多行注释)"></a>注释<br>eg.#内容<br>（单行注释）<br>eg.’’’        “””<br>   内容  或   内容<br>   ‘’’        “””<br>(多行注释)</h2><p>输出<br>print（””）</p>
-<p>标识符（变量名）<br>由字母，数字，下划线组成；开头必须为字母或下划线。<br>换行符：\n<br>连字符：+</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-安排" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2024/12/02/%E5%AE%89%E6%8E%92/" class="article-date">
-  	<time datetime="2024-12-02T15:15:46.904Z" itemprop="datePublished">2024-12-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>任务：<br>html<br>css<br>java spring boot<br>python<br>ai算法工程师手册：<a target="_blank" rel="noopener" href="https://huaxiaozhuan.com/">https://huaxiaozhuan.com</a></p>
-<p>先学python吧<br>day1:1+2</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-小狗" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2024/11/28/%E5%B0%8F%E7%8B%97/" class="article-date">
-  	<time datetime="2024-11-28T12:08:24.000Z" itemprop="datePublished">2024-11-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/11/28/%E5%B0%8F%E7%8B%97/">
-        小狗
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>2024-11-28<br>噢~成功啦，来记录一下吧。嘿嘿<br>2024-11-30<br>好烦啊，不开心。不知道为什么。啊啊啊好想骂人啊。有点迷茫是怎么回事，现在要干什么呢？<br>2024-12-01<br>全青例会，累。<br>2024-12-02哎呀没和帅哥坐同一部电梯。<br>啊啊啊啊，不开心。凌鹏吃饭只顾着看手机，讨厌他。<br>哇哦，今天去吃了kfc~~开心<br>好累哦，大学计算机是什么鬼哦，讨厌！！！唉，考完了，一定要过!!!<br>今天没课，但好像也没学什么</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -522,8 +244,8 @@
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
