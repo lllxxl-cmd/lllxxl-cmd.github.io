@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>dog&#39;home</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#字符串 拼接print(&quot;&quot;+&quot;&quot;)#数字精度控制m.nm控制宽度，，要求是数字，设置宽度小于数字自身，不生效(补空格).n控制小数点精度，会进行四舍五入#函数   def 函数名(传入参数)：     函数体     return 返回值  函数调用  1  --- --- #变量在函数中的作用域  ##局部变量 定义在函数体内部的变量，即只在函数体内部">
+<meta property="og:type" content="article">
+<meta property="og:title" content="dog&#39;home">
+<meta property="og:url" content="https://lllxxl-cmd.github.io/2024/12/05/python%20day7/index.html">
+<meta property="og:site_name" content="dog&#39;home">
+<meta property="og:description" content="#字符串 拼接print(&quot;&quot;+&quot;&quot;)#数字精度控制m.nm控制宽度，，要求是数字，设置宽度小于数字自身，不生效(补空格).n控制小数点精度，会进行四舍五入#函数   def 函数名(传入参数)：     函数体     return 返回值  函数调用  1  --- --- #变量在函数中的作用域  ##局部变量 定义在函数体内部的变量，即只在函数体内部">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-12-04T16:37:14.006Z">
+<meta property="article:modified_time" content="2024-12-04T16:37:14.195Z">
+<meta property="article:author" content="dog">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternative" href="/atom.xml" title="dog&#39;home" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+
+  
+<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+				<img lazy-src="" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+			<h1 class="header-author"><a href="/">dog</a></h1>
+		</hgroup>
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">Home</a></li>
+				        
+							<li><a href="/archives">Archives</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="half-header-menu">
+						<a class="hide">Home</a>
+						<a>Tags</a>
+						<a>Links</a>
+						<a>About</a>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+						<!-- music -->
+						
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/">github</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">I&#39;m a developer.</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide"></h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author"></h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">Home</a></li>
+		        
+					<li><a href="/archives">Archives</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-python day7" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2024/12/05/python%20day7/" class="article-date">
+  	<time datetime="2024-12-04T16:37:14.006Z" itemprop="datePublished">2024-12-05</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="字符串-拼接print"><a href="#字符串-拼接print" class="headerlink" title="#字符串 拼接print(&quot;&quot;+&quot;&quot;)"></a>#<em>字符串</em> 拼接<br><p><code>print(&quot;&quot;+&quot;&quot;)</code><br><p></h2><h2 id="数字精度控制m-nm控制宽度，，要求是数字，设置宽度小于数字自身，不生效-补空格-n控制小数点精度，会进行四舍五入"><a href="#数字精度控制m-nm控制宽度，，要求是数字，设置宽度小于数字自身，不生效-补空格-n控制小数点精度，会进行四舍五入" class="headerlink" title="#数字精度控制m.nm控制宽度，，要求是数字，设置宽度小于数字自身，不生效(补空格).n控制小数点精度，会进行四舍五入"></a>#数字精度控制<br><p>m.n<br><p>m控制宽度，，要求是数字，设置宽度小于数字自身，不生效(补空格)<br><p>.n控制小数点精度，会进行四舍五入<br><p></h2><p>#函数</p>
+<p>
+
+<pre><code>def 函数名(传入参数)：
+    函数体
+    return 返回值
+</code></pre>
+<p>函数调用
+<p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<p>
+---
+---
+#变量在函数中的作用域
+<p>
+##局部变量
+<p>定义在函数体内部的变量，即只在函数体内部生效（临时）
+<p>当局部变量前加上global，则其变为全局变量
+##全局变量
+在函数体内，外都生效的变量
+<p>
+------
+#数据容器
+##列表 list
+**允许重复数据**
+###字面量
+<p>[元素1，元素2，元素3...]
+###定义变量
+<p>变量名称=[元素1，元素2，元素3...]
+###定义空列表
+<p>变量名称=[]
+<p>变量名称=list()
+<p>
+---------------------
+<p>列表元素可以有反向索引，从-1开始，依次递减
+<p>
+---
+###列表嵌套
+<p>eg.
+
+    
+
+<pre><code>a=[[1,2,3],[4,5,6]]
+#若想取2
+b=a[0][1]
+</code></pre>
+<p>###列表索引查询</p>
+<p>列表.index(元素)
+<p>若查询不到则报错
+###列表元素替换
+<p>列表[下标]=值
+###列表元素插入
+<p>列表.insert(下标，元素)
+###追加元素
+<p>列表.append（元素）
+<p>将元素追加至尾部
+###删除元素
+<p>del 列表[下标]
+<p>列表.pop[下标] **可得到删掉的元素**
+<p>列表.remove(元素) **从前到后搜索，删除第一个**
+###清空列表
+<p>列表.clear
+###统计某元素在列表中数量
+<p>列表.count(元素)
+###统计列表中有几个元素
+<p>len(列表)
+###列表的遍历
+<p>while循环
+
+<pre><code>while 条件i&lt;length:
+    执行语句
+    i+=1
+</code></pre>
+<p>for循环
+
+
+<pre><code>for 临时变量 in 数据容器：
+    对临时变量进行处理
+</code></pre>
+<p>##元组 tuple<br><strong>允许重复数据</strong></p>
+<p>**一旦定义完成，不可修改**
+###字面量
+<p>(元素,元素,...)
+###变量名称
+<p>变量名称=(元素,元素,...)
+<p>**单个元素，元素后面加**
+<p>但是，若元组中嵌套list，其元素可修改
+###空元组
+<p>变量名称=()
+<p>变量名称=tuple()
+##字符串
+
+<h2 id="集合-字典"><a href="#集合-字典" class="headerlink" title="##集合##字典"></a>##集合<br>##字典</h2><p>#方法</p>
+<p>将函数定义为class（类）的成员，那么函数被称为方法
+<p>
+
+<pre><code>def add(x,y):
+return x+y
+</code></pre>
+<p>方法调用：
+
+
+<pre><code>student=Student()
+num=student.add(x,y)
+</code></pre>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/12/04/python%20day6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2024 dog
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/preccrep/hexo-theme-jelly" target="_blank">Jelly</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

@@ -9,15 +9,15 @@
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="循环语句1.while 123while()    执行语句    执行语句 2.while…else… 1234567while()    执行语句    执行语句    ...else    执行语句    ... 3.for(可用于遍历) 12345for a in &#x27;python&#x27;:    print(&quot;当前字母：%s\n&quot; %a)fruits&#x3D;[&amp;">
+  <meta name="description" content="循环语句1.while 123while()    执行语句    执行语句 2.while…else… 1234567while()    执行语句    执行语句    ...else    执行语句    ... 3.for(可用于遍历)–知道循环次数 12345for a in &#x27;python&#x27;:    print(&quot;当前字母：%s\n&quot; %a)fr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="dog&#39;home">
 <meta property="og:url" content="https://lllxxl-cmd.github.io/2024/12/04/python%20day4/index.html">
 <meta property="og:site_name" content="dog&#39;home">
-<meta property="og:description" content="循环语句1.while 123while()    执行语句    执行语句 2.while…else… 1234567while()    执行语句    执行语句    ...else    执行语句    ... 3.for(可用于遍历) 12345for a in &#x27;python&#x27;:    print(&quot;当前字母：%s\n&quot; %a)fruits&#x3D;[&amp;">
+<meta property="og:description" content="循环语句1.while 123while()    执行语句    执行语句 2.while…else… 1234567while()    执行语句    执行语句    ...else    执行语句    ... 3.for(可用于遍历)–知道循环次数 12345for a in &#x27;python&#x27;:    print(&quot;当前字母：%s\n&quot; %a)fr">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-12-03T16:57:47.305Z">
-<meta property="article:modified_time" content="2024-12-03T17:21:10.367Z">
+<meta property="article:modified_time" content="2024-12-05T12:04:36.646Z">
 <meta property="article:author" content="dog">
 <meta name="twitter:card" content="summary">
   
@@ -169,12 +169,12 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">while()</span><br><span class="line">    执行语句</span><br><span class="line">    执行语句</span><br></pre></td></tr></table></figure>
 <p>2.while…else…</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">while()</span><br><span class="line">    执行语句</span><br><span class="line">    执行语句</span><br><span class="line">    ...</span><br><span class="line">else</span><br><span class="line">    执行语句</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
-<p>3.for(可用于遍历)</p>
+<p>3.for(可用于遍历)–知道循环次数</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for a in &#x27;python&#x27;:</span><br><span class="line">    print(&quot;当前字母：%s\n&quot; %a)</span><br><span class="line">fruits=[&#x27;banana&#x27;,&#x27;apple&#x27;,&#x27;orange&#x27;]</span><br><span class="line">for fruit in fruits:</span><br><span class="line">    print(&quot;当前水果为%s\n&quot; %fruit)</span><br></pre></td></tr></table></figure>
 <p>4.for…else…</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">for num in range(10,20): # 迭代 10 到 20 之间的数字 </span><br><span class="line">    for i in range(2,num): # 根据因子迭代 </span><br><span class="line">        if num%i == 0: # 确定第一个因子 </span><br><span class="line">        	j=num/i # 计算第二个因子 </span><br><span class="line">        	print(&#x27;%d 等于 %d * %d&#x27; % (num,i,j)) </span><br><span class="line">        	break # 跳出当前循环</span><br><span class="line">    else: # 循环的 else 部分 </span><br><span class="line">        print(&#x27;%d 是一个质数&#x27; % num)</span><br></pre></td></tr></table></figure>
 
-<p>break语句<br>打破最小封闭for或while循环，即终止循环语句<br>continue语句<br>跳过本次循环<br>pass语句<br>空语句，一般用作占位语句</p>
+<p>break语句<br>打破最小封闭for或while循环，即终止循环语句<br>continue语句<br>跳过本次循环<br>pass语句<br>空语句，一般用作占位语句<br>range(num)语句<br>range(5)可取的0，1，2，3，4<br>range(5,10)可取得5，6，7，8，9<br>range(5,10,2)可取得5，7，9  其中2为步长</p>
 
       
     </div>
